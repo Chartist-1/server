@@ -2,13 +2,10 @@ import os
 import json 
 
 def filing(file):
-    a="static\_"
-    path = a+file
-    with open(path,'r' ,encoding='utf-8') as f:
+    with open(file,'r' ,encoding='utf-8') as f:
         data = json.load(f)
         return data
 
-filing('filter.json') 
 
 
 
